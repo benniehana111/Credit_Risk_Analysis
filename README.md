@@ -4,15 +4,15 @@
 
 This analysis uses machine learning to predict credit risk, testing the effectiveness of six different models. The first four models used logistic regression with four alternative sampling algorithms:
 
-(1) Logistic regression w/RandomOverSampler
-(2) Logistic regression w/SMOTE
-(3) Logistic regression w/ClusterCentroids
-(4) Logistic regression w/SMOTEENN
+(1) Logistic regression w/RandomOverSampler  
+(2) Logistic regression w/SMOTE  
+(3) Logistic regression w/ClusterCentroids  
+(4) Logistic regression w/SMOTEENN  
 
-The last two models used ensemble classifiers:
+The last two models used ensemble classifiers:  
 
-(5) Balanced Random Forest
-(6) Easy Ensemble Classifier
+(5) Balanced Random Forest  
+(6) Easy Ensemble Classifier  
 
 These models are tested for their ability to predict credit risk, based on a dataset on consumer credit risk with 115,676 observations, containing over 100 variables on consumer's debts, assets, available credit, and credit histories. For each of these six models we calculate accuracy scores, generate confusion matrices, and imbalanced classification reports.
 
@@ -20,94 +20,82 @@ These models are tested for their ability to predict credit risk, based on a dat
 
 ### Accuracy scores for the six models are:
 
-(1) Accuracy Score for logistic regression w/RandomOverSampler:       0.6249984891886339
-(2) Accuracy Score for logistic regression w/SMOTE:                   0.6512584051472337
-(3) Accuracy Score for logistic regression w/ClusterCentroids:        0.5159904274991842
-(4) Accuracy Score for logistic regression w/SMOTEENN:                0.6501283182453639
-(5) Accuracy Score for Balanced Random Forest Classifier:             0.7877672625306695
-(6) Accuracy Score for Easy Ensemble Classifier:                      0.9197970678173006
+(1) Accuracy Score for logistic regression w/RandomOverSampler: &nbsp; 0.6249984891886339  
+(2) Accuracy Score for logistic regression w/SMOTE: &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; 0.6512584051472337  
+(3) Accuracy Score for logistic regression w/ClusterCentroids: &emsp; &ensp; &ensp; 0.5159904274991842  
+(4) Accuracy Score for logistic regression w/SMOTEENN: &emsp; &emsp; &emsp; &emsp; 0.6501283182453639  
+(5) Accuracy Score for Balanced Random Forest Classifier: &emsp; &emsp; &emsp; &nbsp; 0.7877672625306695  
+(6) Accuracy Score for Easy Ensemble Classifier: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 0.9197970678173006  
 
 ### Confusion matrices for the six models are:
 
-(1) Logistic regression w/RandomOverSampler
-	                Predicted high_risk	  Predicted low_risk
-Actual high_risk	        52  	                35
-Actual low_risk	        5952	               11166
+(1) Logistic regression w/RandomOverSampler  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Predicted high_risk &emsp; &emsp; &ensp; Predicted low_risk  
+Actual high_risk &emsp; &emsp; &emsp; 52 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 35  
+Actual low_risk &emsp; &emsp; &emsp; 5952 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 11166  
 
-(2) Logistic regression w/SMOTE
-	                Predicted high_risk	  Predicted low_risk
-Actual high_risk	        56  	                31
-Actual low_risk	        5840	               11278
+(2) Logistic regression w/SMOTE  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Predicted high_risk &emsp; &emsp; &ensp; Predicted low_risk  
+Actual high_risk &emsp; &emsp; &emsp; 56 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 31  
+Actual low_risk &emsp; &emsp; &emsp; 5840 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 11278  
 
-(3) Logistic regression w/ClusterCentroids
-	                Predicted high_risk	  Predicted low_risk
-Actual high_risk	        52  	                35
-Actual low_risk	        9684	                7434
+(3) Logistic regression w/ClusterCentroids  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Predicted high_risk &emsp; &emsp; &ensp; Predicted low_risk  
+Actual high_risk &emsp; &emsp; &emsp; 52 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 35  
+Actual low_risk &emsp; &emsp; &emsp; 9684 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 7434  
 
-(4) Logistic regression w/SMOTEENN
-	                Predicted high_risk	  Predicted low_risk
-Actual high_risk	        63  	                24
-Actual low_risk	        7256	                9862
+(4) Logistic regression w/SMOTEENN  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Predicted high_risk &emsp; &emsp; &ensp; Predicted low_risk  
+Actual high_risk &emsp; &emsp; &emsp; 63 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 24  
+Actual low_risk &emsp; &emsp; &emsp; 7256 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 9862  
 
-(5) Balanced Random Forest
-	                Predicted high_risk	  Predicted low_risk
-Actual high_risk	        58  	                29
-Actual low_risk	        1560	               15558
+(5) Balanced Random Forest  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Predicted high_risk &emsp; &emsp; &ensp; Predicted low_risk  
+Actual high_risk &emsp; &emsp; &emsp; 58 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 29  
+Actual low_risk &emsp; &emsp; &emsp; 1560 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 15558  
 
-(6) Easy Ensemble Classifier
-	                Predicted high_risk	  Predicted low_risk
-Actual high_risk	        78  	                 9
-Actual low_risk	         975	               16143
+(6) Easy Ensemble Classifier  
+&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; Predicted high_risk &emsp; &emsp; &ensp; Predicted low_risk  
+Actual high_risk &emsp; &emsp; &emsp; 78 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 9  
+Actual low_risk &emsp; &emsp; &emsp; 975 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 16143  
 
 ### Imbalanced Classification Reports for the six models are:
 
-(1) Logistic regression w/RandomOverSampler
-                   pre       rec       spe        f1       geo       iba       sup
+(1) Logistic regression w/RandomOverSampler  
+&emsp; &emsp; &emsp; &emsp; &emsp; &ensp; pre &emsp; &emsp; &nbsp; rec &emsp; &emsp; spe &emsp; &emsp; &nbsp; f1 &emsp; &emsp; &nbsp; geo &emsp; &emsp; &nbsp; iba &emsp; &emsp; &nbsp; sup  
+high_risk &emsp; &ensp; &nbsp; 0.01 &emsp; &emsp; 0.60 &emsp; &emsp; 0.65 &emsp; &emsp; 0.02 &emsp; &emsp; 0.62 &emsp; &emsp; 0.39 &emsp; &emsp; &ensp; 87  
+low_risk &emsp; &emsp;  &nbsp; 1.00 &emsp; &emsp; 0.60 &emsp; &emsp; 0.60 &emsp; &emsp; 0.70 &emsp; &emsp; 0.62 &emsp; &emsp; 0.39 &emsp; &emsp; 17118  
+avg/total &emsp; &emsp; 0.99 &emsp; &emsp; 0.65 &emsp; &emsp; 0.60 &emsp; &emsp; 0.78 &emsp; &emsp; 0.62 &emsp; &emsp; 0.39 &emsp; &emsp; 17205  
 
-  high_risk       0.01      0.60      0.65      0.02      0.62      0.39        87
-   low_risk       1.00      0.65      0.60      0.79      0.62      0.39     17118
+(2) Logistic regression w/SMOTE  
+&emsp; &emsp; &emsp; &emsp; &emsp; &ensp; pre &emsp; &emsp; &nbsp; rec &emsp; &emsp; spe &emsp; &emsp; &nbsp; f1 &emsp; &emsp; &nbsp; geo &emsp; &emsp; &nbsp; iba &emsp; &emsp; &nbsp; sup  
+high_risk &emsp; &ensp; &nbsp; 0.01 &emsp; &emsp; 0.64 &emsp; &emsp; 0.66 &emsp; &emsp; 0.02 &emsp; &emsp; 0.65 &emsp; &emsp; 0.42 &emsp; &emsp; &ensp; 87  
+low_risk &emsp; &emsp;  &nbsp; 1.00 &emsp; &emsp; 0.66 &emsp; &emsp; 0.64 &emsp; &emsp; 0.79 &emsp; &emsp;  0.65 &emsp; &emsp; 0.42 &emsp; &emsp; 17118  
+avg/total &emsp; &emsp; 0.99 &emsp; &emsp; 0.66 &emsp; &emsp; 0.64 &emsp; &emsp; 0.79 &emsp; &emsp; 0.65 &emsp; &emsp; 0.42 &emsp; &emsp; 17205  
 
-avg / total       0.99      0.65      0.60      0.78      0.62      0.39     17205
+(3) Logistic regression w/ClusterCentroids  
+&emsp; &emsp; &emsp; &emsp; &emsp; &ensp; pre &emsp; &emsp; &nbsp; rec &emsp; &emsp; spe &emsp; &emsp; &nbsp; f1 &emsp; &emsp; &nbsp; geo &emsp; &emsp; &nbsp; iba &emsp; &emsp; &nbsp; sup  
+high_risk &emsp; &ensp; &nbsp; 0.01 &emsp; &emsp; 0.60 &emsp; &emsp; 0.43 &emsp; &emsp; 0.01 &emsp; &emsp; 0.51 &emsp; &emsp; 0.26 &emsp; &emsp; &ensp; 87  
+low_risk &emsp; &emsp;  &nbsp; 1.00 &emsp; &emsp; 0.43 &emsp; &emsp; 0.60 &emsp; &emsp; 0.60 &emsp; &emsp; 0.51 &emsp; &emsp; 0.26 &emsp; &emsp; 17118  
+avg/total &emsp; &emsp; 0.99 &emsp; &emsp; 0.44 &emsp; &emsp; 0.60 &emsp; &emsp; 0.60 &emsp; &emsp; 0.51 &emsp; &emsp; 0.26 &emsp; &emsp; 17205  
 
-(2) Logistic regression w/SMOTE
-                   pre       rec       spe        f1       geo       iba       sup
+(4) Logistic regression w/SMOTEENN  
+&emsp; &emsp; &emsp; &emsp; &emsp; &ensp; pre &emsp; &emsp; &nbsp; rec &emsp; &emsp; spe &emsp; &emsp; &nbsp; f1 &emsp; &emsp; &nbsp; geo &emsp; &emsp; &nbsp; iba &emsp; &emsp; &nbsp; sup  
+high_risk &emsp; &ensp; &nbsp; 0.01 &emsp; &emsp; 0.72 &emsp; &emsp; 0.58 &emsp; &emsp; 0.02 &emsp; &emsp; 0.65 &emsp; &emsp; 0.42 &emsp; &emsp;  &ensp; 87  
+low_risk &emsp; &emsp;  &nbsp; 1.00 &emsp; &emsp; 0.58 &emsp; &emsp; 0.72 &emsp; &emsp; 0.73 &emsp; &emsp; 0.65 &emsp; &emsp; 0.41 &emsp; &emsp; 17118  
+avg/total &emsp; &emsp; 0.99 &emsp; &emsp; 0.58 &emsp; &emsp; 0.72 &emsp; &emsp; 0.73 &emsp; &emsp; 0.65 &emsp; &emsp; 0.41 &emsp; &emsp; 17205  
 
-  high_risk       0.01      0.64      0.66      0.02      0.65      0.42        87
-   low_risk       1.00      0.66      0.64      0.79      0.65      0.42     17118
+(5) Balanced Random Forest  
+&emsp; &emsp; &emsp; &emsp; &emsp; &ensp; pre &emsp; &emsp; &nbsp; rec &emsp; &emsp; spe &emsp; &emsp; &nbsp; f1 &emsp; &emsp; &nbsp; geo &emsp; &emsp; &nbsp; iba &emsp; &emsp; &nbsp; sup  
+high_risk &emsp; &ensp; &nbsp; 0.04 &emsp; &emsp; 0.67 &emsp; &emsp; 0.91 &emsp; &emsp; 0.07 &emsp; &emsp; 0.78 &emsp; &emsp; 0.59 &emsp; &emsp; &ensp; 87  
+low_risk &emsp; &emsp;  &nbsp; 1.00 &emsp; &emsp; 0.91 &emsp; &emsp; 0.67 &emsp; &emsp; 0.95 &emsp; &emsp; 0.78 &emsp; &emsp; 0.62 &emsp; &emsp; 17118  
+avg/total &emsp; &emsp; 0.99 &emsp; &emsp; 0.91 &emsp; &emsp; 0.67 &emsp; &emsp; 0.95 &emsp; &emsp; 0.78 &emsp; &emsp; 0.62 &emsp; &emsp; 17205  
 
-avg / total       0.99      0.66      0.64      0.79      0.65      0.42     17205
-
-(3) Logistic regression w/ClusterCentroids
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.01      0.60      0.43      0.01      0.51      0.26        87
-   low_risk       1.00      0.43      0.60      0.60      0.51      0.26     17118
-
-avg / total       0.99      0.44      0.60      0.60      0.51      0.26     17205
-
-(4) Logistic regression w/SMOTEENN
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.01      0.72      0.58      0.02      0.65      0.42        87
-   low_risk       1.00      0.58      0.72      0.73      0.65      0.41     17118
-
-avg / total       0.99      0.58      0.72      0.73      0.65      0.41     17205
-
-(5) Balanced Random Forest
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.04      0.67      0.91      0.07      0.78      0.59        87
-   low_risk       1.00      0.91      0.67      0.95      0.78      0.62     17118
-
-avg / total       0.99      0.91      0.67      0.95      0.78      0.62     17205
-
-(6) Easy Ensemble Classifier
-                   pre       rec       spe        f1       geo       iba       sup
-
-  high_risk       0.07      0.90      0.94      0.14      0.92      0.84        87
-   low_risk       1.00      0.94      0.90      0.97      0.92      0.85     17118
-
-avg / total       0.99      0.94      0.90      0.97      0.92      0.85     17205
+(6) Easy Ensemble Classifier  
+&emsp; &emsp; &emsp; &emsp; &emsp; &ensp; pre &emsp; &emsp; &nbsp; rec &emsp; &emsp; spe &emsp; &emsp; &nbsp; f1 &emsp; &emsp; &nbsp; geo &emsp; &emsp; &nbsp; iba &emsp; &emsp; &nbsp; sup  
+high_risk &emsp; &ensp; &nbsp; 0.07 &emsp; &emsp; 0.90 &emsp; &emsp; 0.94 &emsp; &emsp; 0.14 &emsp; &emsp; 0.92 &emsp; &emsp; 0.84 &emsp; &emsp; &ensp; 87  
+low_risk &emsp; &emsp;  &nbsp; 1.00 &emsp; &emsp; 0.94 &emsp; &emsp; 0.90 &emsp; &emsp; 0.97 &emsp; &emsp; 0.92 &emsp; &emsp; 0.85 &emsp; &emsp; 17118  
+avg/total &emsp; &emsp; 0.99 &emsp; &emsp; 0.94 &emsp; &emsp; 0.90 &emsp; &emsp; 0.97 &emsp; &emsp; 0.92 &emsp; &emsp; 0.85 &emsp; &emsp; 17205  
 
 
 
