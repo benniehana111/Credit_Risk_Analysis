@@ -20,12 +20,12 @@ These models are tested for their ability to predict credit risk, based on a dat
 
 ### Accuracy scores for the six models are:
 
-(1) Accuracy Score for logistic regression w/RandomOverSampler: &nbsp; 0.6249984891886339  
-(2) Accuracy Score for logistic regression w/SMOTE: &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; 0.6512584051472337  
-(3) Accuracy Score for logistic regression w/ClusterCentroids: &emsp; &ensp; &ensp; 0.5159904274991842  
-(4) Accuracy Score for logistic regression w/SMOTEENN: &emsp; &emsp; &emsp; &emsp; 0.6501283182453639  
-(5) Accuracy Score for Balanced Random Forest Classifier: &emsp; &emsp; &emsp; &nbsp; 0.7877672625306695  
-(6) Accuracy Score for Easy Ensemble Classifier: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 0.9197970678173006  
+(1) Accuracy Score for logistic regression w/RandomOverSampler: &ensp; 0.625  
+(2) Accuracy Score for logistic regression w/SMOTE: &emsp; &emsp; &emsp; &emsp; &emsp; &nbsp; 0.651  
+(3) Accuracy Score for logistic regression w/ClusterCentroids: &emsp; &ensp; &ensp; 0.516  
+(4) Accuracy Score for logistic regression w/SMOTEENN: &emsp; &emsp; &emsp; &emsp; 0.650  
+(5) Accuracy Score for Balanced Random Forest Classifier: &emsp; &emsp; &emsp; &nbsp; 0.788  
+(6) Accuracy Score for Easy Ensemble Classifier: &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; 0.920  
 
 ### Confusion matrices for the six models are:
 
@@ -97,6 +97,12 @@ high_risk &emsp; &ensp; &nbsp; 0.07 &emsp; &emsp; 0.90 &emsp; &emsp; 0.94 &emsp;
 low_risk &emsp; &emsp;  &nbsp; 1.00 &emsp; &emsp; 0.94 &emsp; &emsp; 0.90 &emsp; &emsp; 0.97 &emsp; &emsp; 0.92 &emsp; &emsp; 0.85 &emsp; &emsp; 17118  
 avg/total &emsp; &emsp; 0.99 &emsp; &emsp; 0.94 &emsp; &emsp; 0.90 &emsp; &emsp; 0.97 &emsp; &emsp; 0.92 &emsp; &emsp; 0.85 &emsp; &emsp; 17205  
 
-
-
 ## Summary
+
+The results of this analysis indicates that the Easy Ensemble Classifier model is superior to all other models and is recommended for use. This model:  
+
+A) Has the highest accuracy score (0.920).  
+B) Correctly identified the most high_risk loans (78 out of 87).  
+C) Failed to identify the fewest high risk loans (9 out of 87 high risk loans identified as low risk).  
+D) Flagged the fewest low risk loans as high risk (975 out of 17,118).  
+E) Has the best recall (0.94) and F1 (0.97) scores.  
